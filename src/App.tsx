@@ -23,7 +23,8 @@ function App() {
       <Nav />
       <Banner />
       <Suspense fallback={<h2>Loading languages...</h2>}>
-        <Languages languagesPromise={languagesPromise} />
+        <Languages languagesPromise={languagesPromise}
+         />
       </Suspense>
       <Footer />
 

@@ -15,32 +15,32 @@ const nav = () => {
         </div>
 
             <ul className="hidden items-center gap-8 font-medium text-gray-700 md:flex">
-                <li className="cursor-pointer transition hover:text-blue-400">
+                <li className="cursor-pointer transition hover:text-pink-400">
                     Home
                 </li>
 
-                <li className="cursor-pointer transition hover:text-blue-400">
+                <li className="cursor-pointer transition hover:text-pink-400">
                 Technologies
                 </li>
 
-                <li className="cursor-pointer transition hover:text-blue-400">
+                <li className="cursor-pointer transition hover:text-pink-400">
                     Projects
                 </li>
 
-                <li className="cursor-pointer transition hover:text-blue-400">
+                <li className="cursor-pointer transition hover:text-pink-400">
                     About
                 </li>
-                <li className="cursor-pointer transition hover:text-blue-400">
+                <li className="cursor-pointer transition hover:text-pink-400">
                     Contact
                 </li>
             </ul>
 
         <div className="flex items-center ">
-        <button className="rounded-full bg-[#ffffff] px-5 py-2 text-[10px] font-medium text-black shadow-sm">
+        <button className=" cursor-pointer rounded-full rounded-r-none border-r-0 bg-[#ffffff] px-5 py-2 text-[10px] font-medium text-black">
         Sign Up
       </button>
 
-      <button className="rounded-full bg-[#c92b69] px-5 py-2 text-[10px] font-medium text-white shadow-sm">
+      <button className="cursor-pointer transition hover:bg-pink-600 rounded-full rounded-l-none bg-[#c92b69] px-5  py-2 text-[10px] font-medium text-white ">
         Sign Up
       </button>
     </div>
