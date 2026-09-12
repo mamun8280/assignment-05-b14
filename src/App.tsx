@@ -1,5 +1,6 @@
 
 import Nav from "./Component/Nav";
+import Banner from "./Component/Banner";
 
 function App() {
 
@@ -8,8 +9,8 @@ function App() {
    
 
     <div>
-       <Nav />
-    
+      <Nav />
+      <Banner />
 
     </div>
   )
