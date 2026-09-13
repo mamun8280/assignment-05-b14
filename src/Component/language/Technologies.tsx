@@ -22,10 +22,14 @@ const Technologies = ({
         return (
           <div
             key={language.name}
-            className="bg-white border border-gray-200 rounded-2xl p-5 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col"
+            className={`bg-white rounded-2xl p-5 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col border-2 ${
+              isSelected
+                ? "border-pink-500"
+                : "border-gray-200"
+            }`}
           >
 
-            {/* Logo */}
+          
             <div className="h-20 flex items-center justify-center mb-4">
               {language.logo ? (
                 <img
@@ -40,17 +44,17 @@ const Technologies = ({
               )}
             </div>
 
-            {/* Technology Name */}
+            
             <h2 className="text-lg font-bold text-gray-800">
               {language.name}
             </h2>
 
-            {/* Description */}
-            <p className="text-sm text-gray-500 leading-6 mt-2 min-h-[96px]">
+           
+            <p className="text-sm text-gray-500 leading-6 mt-2 min-h-24">
               {language.description}
             </p>
 
-            {/* Category + Level */}
+           
             <div className="flex items-center justify-between gap-2 mt-4">
               <span className="px-3 py-1 text-xs rounded-full bg-gray-100 text-gray-600">
                 {language.category}
@@ -61,21 +65,20 @@ const Technologies = ({
               </span>
             </div>
 
-            {/* Rating */}
+           
             <p className="text-sm text-gray-600 mt-3">
               ⭐ {language.rating}
             </p>
 
-            {/* Add Button */}
+           
             <button
               onClick={() => handleAddToStack(language)}
               disabled={isSelected}
-              className={`w-full mt-5 py-2.5 rounded-lg font-medium transition-all
-                ${
-                  isSelected
-                    ? "bg-gray-200 text-gray-500 cursor-not-allowed"
-                    : "bg-gray-900 text-white hover:bg-gray-700"
-                }`}
+              className={`w-full mt-5 py-2.5 rounded-lg font-medium transition-all ${
+                isSelected
+                  ? "bg-gray-200 text-gray-500 cursor-not-allowed"
+                  : "bg-gray-900 text-white hover:bg-gray-700"
+              }`}
             >
               {isSelected ? "Added ✓" : "Add to Stack"}
             </button>
