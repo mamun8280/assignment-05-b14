@@ -14,32 +14,36 @@ const Languages = ({ languagesPromise }: LanguagesProps) => {
   const [selectedLanguages, setSelectedLanguages] = useState<Ilanguage[]>([]);
 
   const handleAddToStack = (language: Ilanguage) => {
-    const isAlreadyAdded = selectedLanguages.some(
-      (item) => item.name === language.name
-    );
+  const isAlreadyAdded = selectedLanguages.some(
+    (item) => item.name === language.name
+  );
 
-    if (isAlreadyAdded) {
-      toast.error(`${language.name} is already added`);
-      return;
-    }
+  if (isAlreadyAdded) {
+    toast.warning(`${language.name} is already added`);
+    return;
+  }
 
-    setSelectedLanguages((previous) => [
-      ...previous,
-      language,
-    ]);
+  setSelectedLanguages((previous) => [
+    ...previous,
+    language,
+  ]);
 
-    toast.success(`${language.name} added to your stack`);
-  };
+  toast.success(`${language.name} added to your stack`);
+};
 
-  const handleRemoveFromStack = (name: string) => {
-    setSelectedLanguages((previous) =>
-      previous.filter((language) => language.name !== name)
-    );
-  };
+const handleRemoveFromStack = (name: string) => {
+  setSelectedLanguages((previous) =>
+    previous.filter((language) => language.name !== name)
+  );
 
-  const handleRemoveAll = () => {
-    setSelectedLanguages([]);
-  };
+  toast.success(`${name} removed from your stack`);
+};
+
+const handleRemoveAll = () => {
+  setSelectedLanguages([]);
+
+  toast.success("All technologies removed from your stack");
+};
 
   return (
     <section className="w-full bg-gray-50 py-12">

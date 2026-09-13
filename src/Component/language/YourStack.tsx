@@ -12,7 +12,7 @@ const YourStack = ({
   handleRemoveAll,
 }: YourStackProps) => {
   return (
-    <div className="sticky top-24 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">
+    <div className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm lg:sticky lg:top-24">
 
      
       <div className="border-b border-gray-100 pb-4 text-center">
@@ -20,9 +20,15 @@ const YourStack = ({
           Your Stack
         </h2>
 
-        <p className="mt-1 text-sm text-gray-400">
-          {selectedLanguages.length} Selected
-        </p>
+                <p className="mt-1 text-sm text-gray-400">
+                 {selectedLanguages.length === 0
+                 ? "No Technology Selected"
+                 : `${selectedLanguages.length} ${
+                 selectedLanguages.length === 1
+                ? "Technology"
+                : "Technologies"
+                 } Selected`}
+               </p>
       </div>
 
      
@@ -84,13 +90,11 @@ const YourStack = ({
 
                 
                 <button
-                  onClick={() =>
-                    handleRemoveFromStack(language.name)
-                  }
-                  className="cursor-pointer rounded-md px-2 py-1 text-xs font-medium text-red-500 transition hover:bg-red-50"
-                >
-                  Remove
-                </button>
+              onClick={() => handleRemoveFromStack(language.name)}
+              className="cursor-pointer rounded-md px-2 py-1 text-lg font-bold text-red-500 transition hover:bg-red-50"
+                        >
+              ✕
+            </button>
 
               </div>
             ))}

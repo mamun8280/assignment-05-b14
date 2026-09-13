@@ -104,17 +104,17 @@ const Technologies = ({
             </div>
 
             
-            <button
-              onClick={() => handleAddToStack(language)}
-              disabled={isSelected}
-              className={`mt-5 w-full rounded-lg py-2.5 font-medium transition-all ${
-                isSelected
-                  ? "cursor-not-allowed bg-gray-200 text-gray-500"
-                  : "cursor-pointer bg-gray-900 text-white hover:bg-gray-700"
-              }`}
-            >
-              {isSelected ? "Added ✓" : "Add to Stack"}
-            </button>
+           <button
+          onClick={() => handleAddToStack(language)}
+          disabled={isSelected}
+          className={`mt-5 w-full rounded-lg py-2.5 font-medium transition-all ${
+            isSelected
+              ? "cursor-not-allowed bg-gray-200 text-gray-500"
+              : "cursor-pointer bg-gray-900 text-white hover:bg-gray-700"
+          }`}
+        >
+          {isSelected ? "✓ Added to Stack" : "Add to Stack"}
+         </button>
 
           </div>
         );
