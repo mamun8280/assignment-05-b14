@@ -58,40 +58,40 @@ The website is fully responsive and works on:
 
 ## 1. What is JSX, and why is it used in React?
 
-JSX allows us to write HTML-like code inside JavaScript. It makes React code easier to write and understand.
+JSX allows us to write HTML-like code inside JavaScript. It makes React code easier to write, read, and understand.
 
 ---
 
 ## 2. What is the difference between props and state?
 
-Props are used to pass data from a parent to a child component. State stores data that can change inside a component.
+Props are used to pass data from a parent component to a child component. State is used to store and manage data that can change inside a component.
 
 ---
 
-## 3. What does the `useState` hook do, and where did you use it in this project?
+## 3. What does the useState hook do, and where did you use it in this project?
 
-`useState` stores and updates changing data. I used it to store the selected technologies in `selectedLanguages`.
-
----
-
-## 4. What does the `useEffect` hook do, and why did you need it to load the JSON data?
-
-`useEffect` is used for side effects like fetching data. In this project, I used React `use()` and `Suspense` to load the JSON data instead.
+The useState hook is used to store and update changing data in a React component. In this project, I used useState to store the selected technologies in selectedLanguages.
 
 ---
 
-## 5. Why does every item in a `.map()` list need a unique `key` prop?
+## 4. What does the useEffect hook do, and why did you need it to load the JSON data?
 
-A unique `key` helps React identify and update each item correctly.
+The useEffect hook is used to handle side effects such as data fetching. In this project, I did not use useEffect to load the JSON data. Instead, I used React's use() hook with Suspense.
+
+---
+
+## 5. Why does every item in a .map() list need a unique key prop?
+
+Every item in a .map() list needs a unique key so that React can identify each item and efficiently update the list when the data changes.
 
 ---
 
 ## 6. What is conditional rendering? Show one place you used it.
 
-Conditional rendering means showing different UI based on a condition. I used it in **Your Stack** to show an empty message when no technology is selected.
+Conditional rendering means showing different UI based on a condition. I used it in the Your Stack section to show an empty message when no technology is selected.
 
 ---
 
 ## 7. How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
 
-A parent passes data and functions to a child through props. A child can call the received function to send an action or data back to the parent.
+A parent component passes data and functions to a child component through props. The child component can call a function received through props to send data or an action back to the parent component.
