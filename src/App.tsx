@@ -29,7 +29,7 @@ function App() {
 
       <Footer />
 
-      <ToastContainer />
+      <ToastContainer position="top-center" />
     </div>
   );
 }

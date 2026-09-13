@@ -17,7 +17,7 @@
   },
   {
     "name": "Svelte",
-    "logo": "svelte-logo.svg",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDWpVEwcDoqYpHJP0juQjBp_43QeTYUOiMI9JpKLkgSQ&s=10.jpg",
     "description": "Cybernetically enhanced web apps with compile-time reactivity and zero virtual DOM overhead.",
     "category": "Frontend",
     "level": "Intermediate",
@@ -25,7 +25,7 @@
   },
   {
     "name": "Next.js",
-    "logo": "nextjs-logo.svg",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaPcVAOPA6v46v33VauUoxGNgm75nt60i_eYij_aAC0Q&s.jpg",
     "description": "The React framework for full-stack web applications with hybrid static & server rendering.",
     "category": "Frontend",
     "level": "Intermediate",
@@ -33,7 +33,7 @@
   },
   {
     "name": "Node.js",
-    "logo": "nodejs-logo.svg",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIP9Np5Jpso7cSfocadT4fvkthe62zgUcD468LhJdmlg&s=10.jpg",
     "description": "An asynchronous event-driven JavaScript runtime built on Chrome's V8 engine.",
     "category": "Backend",
     "level": "Intermediate",
@@ -41,7 +41,7 @@
   },
   {
     "name": "PostgreSQL",
-    "logo": "postgresql-logo.svg",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmuXhlo92JSv73kM7cO2wfXI97YrOzydwkb-jeh4Ga9g&s=10.jpg",
     "description": "A powerful, open-source object-relational database system with proven reliability.",
     "category": "Database",
     "level": "Intermediate",

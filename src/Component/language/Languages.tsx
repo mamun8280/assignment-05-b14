@@ -11,9 +11,9 @@ interface LanguagesProps {
 const Languages = ({ languagesPromise }: LanguagesProps) => {
   const languages = use(languagesPromise);
 
-  // Selected technologies এখানে থাকবে
   const [selectedLanguages, setSelectedLanguages] = useState<Ilanguage[]>([]);
 
+  // Add to Stack
   const handleAddToStack = (language: Ilanguage) => {
     const isAlreadyAdded = selectedLanguages.some(
       (item) => item.name === language.name
@@ -32,6 +32,18 @@ const Languages = ({ languagesPromise }: LanguagesProps) => {
     toast.success(`${language.name} added to your stack`);
   };
 
+  // Remove one technology
+  const handleRemoveFromStack = (name: string) => {
+    setSelectedLanguages((previous) =>
+      previous.filter((language) => language.name !== name)
+    );
+  };
+
+  // Remove all technologies
+  const handleRemoveAll = () => {
+    setSelectedLanguages([]);
+  };
+
   return (
     <section className="w-full bg-gray-50 py-12">
       <div className="w-full px-6 lg:px-10 xl:px-14">
@@ -39,7 +51,7 @@ const Languages = ({ languagesPromise }: LanguagesProps) => {
         {/* Heading */}
         <div className="mb-8">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-            Explore the{" "}
+            Explore{" "}
             <span className="text-pink-500">
               Technologies
             </span>
@@ -64,7 +76,11 @@ const Languages = ({ languagesPromise }: LanguagesProps) => {
 
           {/* Your Stack */}
           <div className="lg:col-span-1">
-            <YourStack selectedLanguages={selectedLanguages} />
+            <YourStack
+              selectedLanguages={selectedLanguages}
+              handleRemoveFromStack={handleRemoveFromStack}
+              handleRemoveAll={handleRemoveAll}
+            />
           </div>
 
         </div>
