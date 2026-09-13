@@ -14,7 +14,6 @@ const YourStack = ({
   return (
     <div className="bg-white border border-gray-200 rounded-2xl shadow-sm p-5 sticky top-24">
 
-      {/* Header */}
       <div className="text-center border-b border-gray-100 pb-4">
         <h2 className="text-xl font-bold text-gray-800">
           Your Stack
@@ -25,7 +24,7 @@ const YourStack = ({
         </p>
       </div>
 
-      {/* Empty State */}
+      
       {selectedLanguages.length === 0 ? (
         <div className="py-10 text-center">
           <div className="text-4xl mb-3">
@@ -51,10 +50,10 @@ const YourStack = ({
                 className="flex items-center justify-between gap-3 p-3 rounded-xl border border-gray-100 hover:shadow-sm transition"
               >
 
-                {/* Left Side */}
+              
                 <div className="flex items-center gap-3">
 
-                  {/* Logo */}
+                  
                   <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center shrink-0">
                     {language.logo ? (
                       <img
@@ -69,7 +68,6 @@ const YourStack = ({
                     )}
                   </div>
 
-                  {/* Name + Category */}
                   <div>
                     <h3 className="font-semibold text-sm text-gray-800">
                       {language.name}
@@ -82,7 +80,6 @@ const YourStack = ({
 
                 </div>
 
-                {/* Remove Button */}
                 <button
                   onClick={() =>
                     handleRemoveFromStack(language.name)
@@ -97,7 +94,7 @@ const YourStack = ({
 
           </div>
 
-          {/* Remove All Button */}
+          
           <button
             onClick={handleRemoveAll}
             className="mt-5 w-full cursor-pointer rounded-lg bg-red-500 py-2.5 text-sm font-medium text-white transition hover:bg-red-600"

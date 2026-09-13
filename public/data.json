@@ -49,7 +49,7 @@
   },
   {
     "name": "Redis",
-    "logo": "redis-logo.svg",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoWAAH8o5YyTa7isggW4wrcssoBSMPXoSh-xxqVttGRg&s=10.jpg",
     "description": "In-memory data structure store used as a high-speed database, cache, and message broker.",
     "category": "Database",
     "level": "Intermediate",
@@ -57,7 +57,7 @@
   },
   {
     "name": "JavaScript",
-    "logo": "javascript-logo.svg",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtW41-f13wcfMVqPEl9X70IAV9fvf7oYE6svE8e4xIEA&s=10.jpg",
     "description": "The versatile, ubiquitous scripting language powering dynamic behavior across the web.",
     "category": "Language",
     "level": "Beginner-Friendly",
@@ -65,7 +65,7 @@
   },
   {
     "name": "TypeScript",
-    "logo": "typescript-logo.svg",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWcH0IulCXWR2cMYC7nnKIsb3buCxDmxaU4YJ9fDoYgg&s=10.jpg",
     "description": "A strongly typed programming language that builds on JavaScript for robust tooling.",
     "category": "Language",
     "level": "Intermediate",
@@ -73,7 +73,7 @@
   },
   {
     "name": "Java",
-    "logo": "java-logo.svg",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIaRqbYNrfhSIJ-OAZICmWv5aEmLjI0w5wuli5mq_N_A&s.jpg",
     "description": "A secure, object-oriented programming language designed for portability and scale.",
     "category": "Language",
     "level": "Intermediate",
@@ -81,7 +81,7 @@
   },
   {
     "name": "Tailwind CSS",
-    "logo": "tailwind-logo.svg",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvpekgKrVcASXyI6uGxHT-VVfqVUNRMcTdGvk1mrdA3A&s=10.jpg",
     "description": "A utility-first CSS framework packed with classes that can be composed to build custom UI.",
     "category": "Styling",
     "level": "Beginner-Friendly",
@@ -89,7 +89,7 @@
   },
   {
     "name": "Docker",
-    "logo": "docker-logo.svg",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFfZgDAmYOtVYSuPl43lDUey48DuwPVr4ycrskolMF0Q&s=10.jpg",
     "description": "A platform designed to build, share, and run containerized applications reliably.",
     "category": "DevOps",
     "level": "Intermediate",
