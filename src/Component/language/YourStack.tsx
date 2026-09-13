@@ -12,22 +12,23 @@ const YourStack = ({
   handleRemoveAll,
 }: YourStackProps) => {
   return (
-    <div className="bg-white border border-gray-200 rounded-2xl shadow-sm p-5 sticky top-24">
+    <div className="sticky top-24 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">
 
-      <div className="text-center border-b border-gray-100 pb-4">
+     
+      <div className="border-b border-gray-100 pb-4 text-center">
         <h2 className="text-xl font-bold text-gray-800">
           Your Stack
         </h2>
 
-        <p className="text-sm text-gray-400 mt-1">
+        <p className="mt-1 text-sm text-gray-400">
           {selectedLanguages.length} Selected
         </p>
       </div>
 
-      
+     
       {selectedLanguages.length === 0 ? (
         <div className="py-10 text-center">
-          <div className="text-4xl mb-3">
+          <div className="mb-3 text-4xl">
             💻
           </div>
 
@@ -35,7 +36,7 @@ const YourStack = ({
             No technology added yet
           </p>
 
-          <p className="text-xs text-gray-300 mt-2">
+          <p className="mt-2 text-xs text-gray-300">
             Start building your stack
           </p>
         </div>
@@ -46,30 +47,31 @@ const YourStack = ({
 
             {selectedLanguages.map((language) => (
               <div
-                key={language.name}
-                className="flex items-center justify-between gap-3 p-3 rounded-xl border border-gray-100 hover:shadow-sm transition"
+                key={language.id}
+                className="flex items-center justify-between gap-3 rounded-xl border border-gray-100 p-3 transition hover:shadow-sm"
               >
 
-              
+                
                 <div className="flex items-center gap-3">
 
                   
-                  <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center shrink-0">
-                    {language.logo ? (
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-gray-100">
+                    {language.icon ? (
                       <img
-                        src={language.logo}
+                        src={language.icon}
                         alt={language.name}
-                        className="w-8 h-8 object-contain"
+                        className="h-8 w-8 object-contain"
                       />
                     ) : (
                       <span className="text-xs text-gray-400">
-                        Logo
+                        Icon
                       </span>
                     )}
                   </div>
 
+                
                   <div>
-                    <h3 className="font-semibold text-sm text-gray-800">
+                    <h3 className="text-sm font-semibold text-gray-800">
                       {language.name}
                     </h3>
 
@@ -80,6 +82,7 @@ const YourStack = ({
 
                 </div>
 
+                
                 <button
                   onClick={() =>
                     handleRemoveFromStack(language.name)
@@ -94,7 +97,7 @@ const YourStack = ({
 
           </div>
 
-          
+         
           <button
             onClick={handleRemoveAll}
             className="mt-5 w-full cursor-pointer rounded-lg bg-red-500 py-2.5 text-sm font-medium text-white transition hover:bg-red-600"

@@ -1,8 +1,27 @@
 export interface Ilanguage {
+  id: number;
+
   name: string;
-  logo?: string;
+
+  category:
+    | "Frontend"
+    | "Backend"
+    | "Database"
+    | "Language"
+    | "Styling"
+    | "DevOps"
+    | "Tools";
+
   description: string;
-  category: string;
-  level: string;
+
+  icon: string;
+
   rating: number;
+
+  difficulty:
+    | "Beginner-Friendly"
+    | "Intermediate"
+    | "Advanced";
+
+  badge: string;
 }
