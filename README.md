@@ -3,6 +3,8 @@
 A modern and responsive web application where users can explore different technologies and build their own development stack.
 
 ---
+[**b14-assignment05-devstack.netlify.app**](https://b14-assignment05-devstack.netlify.app/)
+---
 
 ## 📖 Project Description
 
