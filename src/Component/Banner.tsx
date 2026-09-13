@@ -6,7 +6,7 @@ const Banner = () => {
     <section className="w-full bg-[#f7f7f8]">
       <div className="mx-auto flex w-full items-center justify-between px-5 py-12 sm:px-6 md:px-10 md:py-16 lg:px-16 xl:px-20">
 
-        {/* Left Content */}
+        
         <div className="w-full max-w-2xl">
           <h1 className="text-3xl font-bold leading-tight text-[#253247] sm:text-4xl md:text-5xl lg:text-6xl">
             Build Your Ideal
@@ -22,7 +22,7 @@ const Banner = () => {
             fits your next project.
           </p>
 
-          {/* Buttons */}
+        
           <div className="mt-6 flex flex-wrap items-center gap-3 sm:mt-8">
             <button className="cursor-pointer rounded-md bg-linear-to-r from-[#ff6b21] to-[#df3975] px-4 py-3 text-xs font-semibold text-white shadow-sm transition hover:opacity-90 sm:px-5">
               Explore Technologies
@@ -34,7 +34,7 @@ const Banner = () => {
           </div>
         </div>
 
-        {/* Right Image */}
+      
         <div className="hidden md:block">
           <img
             src={bannerImage}

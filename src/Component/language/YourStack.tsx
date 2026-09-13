@@ -41,7 +41,7 @@ const YourStack = ({
         </div>
       ) : (
         <>
-          {/* Selected Technologies */}
+          
           <div className="mt-4 space-y-3">
 
             {selectedLanguages.map((language) => (
